@@ -104,9 +104,11 @@ repo, which left this to the user by hand).
 ## Step 6 — AUR helper / COPR handling
 
 - Arch/CachyOS: requires an AUR helper (`yay` or similar) already
-  present — same expectation the old repo already documented, `gcb`
-  checks for one and fails loudly with instructions if missing, doesn't
-  install one on the user's behalf (an AUR-helper choice is personal).
+  present — same expectation the old repo already documented. `gcb`
+  checks for one and warns loudly with exact next-step instructions if
+  missing (skipping just the AUR-dependent icon package, not aborting
+  the whole run), rather than installing one on the user's behalf — an
+  AUR-helper choice is personal.
 - Fedora: if `Yaru-blue-dark` icons end up COPR-only after real
   verification, `gcb` runs `dnf copr enable <repo>` itself (a one-line,
   reversible, well-understood step) rather than punting to a manual
