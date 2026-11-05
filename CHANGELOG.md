@@ -6,6 +6,12 @@ All notable changes to the GCB project will be documented in this file.
 
 ## [Unreleased]
 
+### Docs
+- **"How this was made" in the README** — says plainly that the code
+  and most of the docs were written by Claude (Anthropic's AI
+  assistant) with Claude Code, tested by me on real machines, and how
+  third-party material is credited.
+
 ### Design
 - Project started: COSMIC desktop ricing, built on GLB, targeting Arch,
   CachyOS, Pop!_OS, and the Fedora COSMIC Spin.
